@@ -145,16 +145,16 @@ var Engine = (function(global) {
      * tick. Its purpose is to then call the render functions you have defined
      * on your enemy and player entities within app.js
      */
-    // function renderEntities() {
-    //     /* Loop through all of the objects within the allEnemies array and call
-    //      * the render function you have defined.
-    //      */
+    function renderEntities() {
+        /* Loop through all of the objects within the allEnemies array and call
+         * the render function you have defined.
+         */
     //     allEnemies.forEach(function(enemy) {
     //         enemy.render();
     //     });
 
-    //     player.render();
-    // }
+        player.render();
+    }
 
     /* This function does nothing but it could have been a good place to
      * handle game reset states - maybe a new game menu or a game over screen
