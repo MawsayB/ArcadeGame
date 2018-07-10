@@ -5,6 +5,11 @@ class Entity {
         this.y = 5;
     }
 
+    update() {
+        this.isOutOfBoundsX = this.x > 5;
+        this.isOutOfBoundsY = this.y < 1;
+    }
+
     render() {
         ctx.drawImage(Resources.get(this.sprite), this.x* 101, this.y * 83);
     }
