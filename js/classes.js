@@ -13,6 +13,17 @@ class Entity {
     render() {
         ctx.drawImage(Resources.get(this.sprite), this.x* 101, this.y * 83);
     }
+
+    checkCollisions(playerorEnemy) {
+        if (this.y === playerorEnemy.y) {
+            if (this.x >= playerorEnemy.x - 0.5 && this.x <= playerorEnemy.x + 0.5) {
+                return true;
+            }
+        }
+        else {
+            return false;
+        }
+    }
 }
 
 class Player extends Entity {
