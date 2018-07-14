@@ -34,6 +34,7 @@ class Player extends Entity {
         this.win = false;
     }
 
+    //dt = delta time which is the elapsed time
     update(dt) {
         super.update();
         if (this.isOutOfBoundsY && !this.moving && !this.win) {
