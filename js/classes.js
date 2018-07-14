@@ -30,6 +30,22 @@ class Player extends Entity {
     constructor() {
         super();
         this.sprite += 'char-boy.png';
+        this.moving = false;
+        this.win = false;
+    }
+
+    update(dt) {
+        super.update();
+        if (this.isOutOfBoundsY && !this.moving && !this.win) {
+            alert("You Won! Great job!");
+            this.win = true;
+            //create reset function and call it here
+        }
+    }
+
+    render() {
+        super.render();
+        this.moving = false;
     }
 
     //moves Player within board
@@ -50,6 +66,7 @@ class Player extends Entity {
             default:
                 break;
         }
+        this.moving = true;
     }
 }
 
