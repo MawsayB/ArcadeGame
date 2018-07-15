@@ -7,10 +7,10 @@
 
 Goal: Get your player to the top of the screen without running into a beetle.
 
-    Use up, down, left, and right keys to navigate.
-    Dodge beetles by going up, down, left, or right.
-    Make it to the top and win the game.
-    Then, start at the bottom again.
+* Use up, down, left, and right keys to navigate.
+* Dodge beetles by going up, down, left, or right.
+* Make it to the top and win the game.
+* Then, start at the bottom again.
 
 ## Dependencies
 
