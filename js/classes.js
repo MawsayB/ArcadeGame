@@ -34,13 +34,14 @@ class Player extends Entity {
         this.win = false;
     }
 
-    //dt = delta time which is the elapsed time
+    //dt = delta time which is the elapsed
     update(dt) {
         super.update();
         if (this.isOutOfBoundsY && !this.moving && !this.win) {
             alert("You Won! Great job!");
             this.win = true;
-            //create reset function and call it here
+            player.y = 5;
+            player.x = 2;
         }
     }
 
