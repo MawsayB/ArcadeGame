@@ -76,7 +76,6 @@ class Player extends Entity {
 
 // the Enemy class is the beetle that are trying to run into the Player
 class Enemy extends Entity {
-    //give a different start point
     constructor(x, y) {
         super();
         this.sprite += 'enemy-bug.png';
