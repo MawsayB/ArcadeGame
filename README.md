@@ -3,7 +3,7 @@
 
 ## How to Play
 
-To Run: Clone and open "index.html".
+[Repository](github.com/MawsayB/ArcadeGame)
 
 Goal: Get your player to the top of the screen without running into a beetle.
 
