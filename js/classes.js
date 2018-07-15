@@ -96,3 +96,18 @@ class Enemy extends Entity {
         }
     }
 }
+
+let allEnemies = [];
+randomizeEnemies();
+
+// creates a random number of enemies up to 3
+// with each enemy at a random speed
+function randomizeEnemies() {
+    
+    
+    for (var i=0; i < 3; i++){
+        var x = 0;
+        var y = Math.floor((Math.random() * 3) + 1);
+        allEnemies.push(new Enemy(x, y));
+    }
+};
