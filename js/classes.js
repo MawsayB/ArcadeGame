@@ -1,3 +1,4 @@
+// a generic Entity from which the Player and Enemy classes are built
 class Entity {
     constructor() {
         this.sprite = 'images/';
@@ -26,6 +27,7 @@ class Entity {
     }
 }
 
+// the Player is the ladybug that is trying to move to the top of the screen
 class Player extends Entity {
     constructor() {
         super();
@@ -72,6 +74,7 @@ class Player extends Entity {
     }
 }
 
+// the Enemy class is the beetle that are trying to run into the Player
 class Enemy extends Entity {
     //give a different start point
     constructor(x, y) {

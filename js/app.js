@@ -1,14 +1,12 @@
-//create allEnemies array
-//create player object
+// Instantiates the objects.
+// Places all enemy objects in an array called allEnemies
+// Places the player object in a variable called player
 
-// Now instantiate your objects.
-// Place all enemy objects in an array called allEnemies
-// Place the player object in a variable called player
-
-// This listens for key presses and sends the keys to your
-// Player.handleInput() method. You don't need to modify this.
 const player = new Player();
 const allEnemies = [... Array(3)].map((_, i) => new Enemy(0, i+1));
+
+// This listens for key presses and sends the keys to your
+// Player.handleInput() method. 
 
 document.addEventListener('keyup', function(e) {
     var allowedKeys = {
