@@ -74,6 +74,9 @@ class Player extends Entity {
     }
 }
 
+const enemySpeed = [2, 3, 4, 5];
+var randomEnemySpeed = enemySpeed[Math.floor(Math.random()*enemySpeed.length)];
+
 // the Enemy class is the beetle that are trying to run into the Player
 class Enemy extends Entity {
     constructor(x, y) {
@@ -89,7 +92,7 @@ class Enemy extends Entity {
             this.x = -1;
         }
         else {
-            this.x += dt;
+            this.x += dt*randomEnemySpeed;
         }
     }
 }
