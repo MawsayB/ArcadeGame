@@ -2,6 +2,7 @@
 class Entity {
     constructor() {
         this.sprite = 'images/';
+        //location on grid on X and Y axises
         this.x = 2;
         this.y = 5;
     }
@@ -44,6 +45,7 @@ class Player extends Entity {
             this.win = true;
             player.y = 5;
             player.x = 2;
+            this.win = false;
         }
     }
 
